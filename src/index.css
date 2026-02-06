@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+*{
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}

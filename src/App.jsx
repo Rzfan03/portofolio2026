@@ -3,12 +3,7 @@ import { FaReact, FaWindows } from "react-icons/fa";
 import AnimatedContent from "./components/AnimateMe";
 import ProfileCard from "./components/ProfileCard";
 import SplitText from "./components/SplitText";
-import {
-  SiDiscord,
-  SiGithub,
-  SiLinkedin,
-  SiGmail
-} from "react-icons/si";
+import { SiDiscord, SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
 import {
   SiAstro,
   SiPython,
@@ -243,20 +238,33 @@ const App = () => {
           </div>
         </AnimatedContent>
       </section>
-      
-      <section id="skills" className="py-20 bg-zinc-900 flex flex-col items-center px-6">
-        <div className="w-full max-w-7xl">
+
+      <section
+        id="skills"
+        className="py-20 bg-zinc-900 flex flex-col items-center px-6"
+      >
+        <div className="w-full max-w-7xl flex flex-col items-start max-md:items-center">
           <SplitText className="text-4xl mb-12 text-white" text="My Skills" />
           <div className="flex flex-col gap-12">
             <div className="flex flex-col md:flex-row gap-6 items-center">
-              <h1 className="text-lg text-zinc-500 w-32 shrink-0">Intermediate</h1>
+              <h1 className="text-lg text-zinc-500 w-32 shrink-0">
+                Intermediate
+              </h1>
               <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                 {Intermediate.map((item) => {
                   const Icon = item.icon;
                   return (
-                    <div key={item.name} className="bg-zinc-900 border border-zinc-800 p-2 px-4 flex items-center gap-3 hover:border-zinc-500 transition-all group">
-                      <Icon className="text-zinc-400 group-hover:text-white" size={18} />
-                      <span className="text-white text-sm font-medium">{item.name}</span>
+                    <div
+                      key={item.name}
+                      className="bg-zinc-900 border border-zinc-800 p-2 px-4 flex items-center gap-3 hover:border-zinc-500 transition-all group"
+                    >
+                      <Icon
+                        className="text-zinc-400 group-hover:text-white"
+                        size={18}
+                      />
+                      <span className="text-white text-sm font-medium">
+                        {item.name}
+                      </span>
                     </div>
                   );
                 })}
@@ -268,9 +276,17 @@ const App = () => {
                 {Beginner.map((item) => {
                   const Icon = item.icon;
                   return (
-                    <div key={item.name} className="bg-zinc-900 border border-zinc-800 p-2 px-4 flex items-center gap-3 hover:border-zinc-500 transition-all group">
-                      <Icon className="text-zinc-400 group-hover:text-white" size={18} />
-                      <span className="text-white text-sm font-medium">{item.name}</span>
+                    <div
+                      key={item.name}
+                      className="bg-zinc-900 border border-zinc-800 p-2 px-4 flex items-center gap-3 hover:border-zinc-500 transition-all group"
+                    >
+                      <Icon
+                        className="text-zinc-400 group-hover:text-white"
+                        size={18}
+                      />
+                      <span className="text-white text-sm font-medium">
+                        {item.name}
+                      </span>
                     </div>
                   );
                 })}
@@ -279,8 +295,7 @@ const App = () => {
           </div>
         </div>
       </section>
-      
-      
+
       {/* project section*/}
       <section
         id="projects"
@@ -372,18 +387,21 @@ const App = () => {
         </div>
       </section>
       {/* contact section */}
-      <section id="contact" className="min-h-screen bg-zinc-900 flex flex-col justify-center items-center px-10">
+      <section
+        id="contact"
+        className="min-h-screen bg-zinc-900 flex flex-col justify-center items-center px-10"
+      >
         <AnimatedContent className="flex flex-col items-center w-full max-w-4xl">
           <SplitText
             text="Get In Touch"
             className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tighter"
           />
-      
+
           <p className="text-zinc-500 text-center max-w-xl mb-12 text-lg">
-            Got a question, a project idea, or just want to say hi? My inbox is always open.
-            I'm currently looking for new opportunities!
+            Got a question, a project idea, or just want to say hi? My inbox is
+            always open. I'm currently looking for new opportunities!
           </p>
-      
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
             <a
               href="https://discord.com/users/1241671009820741632"
@@ -400,9 +418,11 @@ const App = () => {
                   <p className="text-zinc-500 text-sm">@rzfan_</p>
                 </div>
               </div>
-              <span className="text-zinc-600 group-hover:text-white transition-colors">→</span>
+              <span className="text-zinc-600 group-hover:text-white transition-colors">
+                →
+              </span>
             </a>
-      
+
             <a
               href="https://github.com/Rzfan03"
               target="_blank"
@@ -418,9 +438,11 @@ const App = () => {
                   <p className="text-zinc-500 text-sm">Rzfan03</p>
                 </div>
               </div>
-              <span className="text-zinc-600 group-hover:text-white transition-colors">→</span>
+              <span className="text-zinc-600 group-hover:text-white transition-colors">
+                →
+              </span>
             </a>
-      
+
             <a
               href="https://www.linkedin.com/in/rizqy-fajrul-syabani-b65002359/"
               target="_blank"
@@ -436,9 +458,11 @@ const App = () => {
                   <p className="text-zinc-500 text-sm">Rizqy Fajrul</p>
                 </div>
               </div>
-              <span className="text-zinc-600 group-hover:text-white transition-colors">→</span>
+              <span className="text-zinc-600 group-hover:text-white transition-colors">
+                →
+              </span>
             </a>
-      
+
             <a
               href="mailto:Fajrulsyaban47@gmail.com"
               className="flex items-center justify-between p-6 border-2 border-zinc-800 bg-zinc-900 hover:border-zinc-400 hover:bg-zinc-800/50 transition-all duration-300 group"
@@ -452,16 +476,19 @@ const App = () => {
                   <p className="text-zinc-500 text-sm">Contact Me Directly</p>
                 </div>
               </div>
-              <span className="text-zinc-600 group-hover:text-white transition-colors">→</span>
+              <span className="text-zinc-600 group-hover:text-white transition-colors">
+                →
+              </span>
             </a>
           </div>
-      
+
           <div className="mt-20 text-zinc-600 font-mono text-sm">
             © 2026 - Rzfan03 Made With Love :)
           </div>
           <span
             onClick={() => {
-              window.location.href = "https://i.pinimg.com/736x/be/e0/66/bee066141d034c7949217841e615c73a.jpg";
+              window.location.href =
+                "https://i.pinimg.com/736x/be/e0/66/bee066141d034c7949217841e615c73a.jpg";
             }}
             className="mt-5 text-zinc-800 cursor-pointer hover:text-zinc-700 transition-colors"
           >

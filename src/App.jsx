@@ -377,29 +377,7 @@ const App = () => {
         </section>
       </AnimatedContent>
 
-      {/* Projects Section - Grid Fix */}
-      <AnimatedContent>
-        <section id="projects" className="py-24 flex justify-center border-b border-zinc-800/50">
-          <div className="w-full max-w-7xl px-6">
-            <SplitText text="My Projects" className="text-4xl text-white mb-12" />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {Projects.map((item) => (
-                <a key={item.name} href={item.link} className="block border-2 border-zinc-800 bg-zinc-900/50 p-6 hover:scale-[0.98] hover:border-zinc-600 transition-all">
-                  <h3 className="text-2xl font-bold text-white mb-2">{item.name}</h3>
-                  <p className="text-zinc-400 text-sm mb-6 h-10 line-clamp-2">{item.desc}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {item.techStack.map((tech) => (
-                      <span key={tech} className="text-md tracking-widest text-zinc-300 bg-zinc-800 px-2 py-1">{tech}</span>
-                    ))}
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-      </AnimatedContent>
-
-      {/* Stats Section - Fix LDR Stats */}
+      {/* Projects Section */}
              <AnimatedContent>
       <section
              id="projects"

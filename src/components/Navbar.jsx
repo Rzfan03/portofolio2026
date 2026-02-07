@@ -11,9 +11,7 @@ const Navbar = () => {
   ];
   
   const socialItems = [
-    { label: 'Twitter', link: 'https://twitter.com' },
-    { label: 'GitHub', link: 'https://github.com' },
-    { label: 'LinkedIn', link: 'https://linkedin.com' }
+    { label: 'GitHub', link: 'https://github.com/Rzfan03' }
   ];
 
   return (

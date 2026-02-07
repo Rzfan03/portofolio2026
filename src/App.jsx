@@ -28,13 +28,10 @@ const App = () => {
   const [followers, setFollowers] = useState("");
 
   useEffect(() => {
-      // 1. Fungsi Wakatime (Tanpa Backend, Pakai btoa)
       const getDataWakatime = async () => {
         try {
           const apiKey = import.meta.env.VITE_WAKATIME_API_KEY;
-          const base64Key = btoa(apiKey); // Pakai btoa biar nggak error Buffer
-          
-          // Pakai cors-anywhere sebagai bridge sementara
+          const base64Key = btoa(apiKey);
           const url = 'https://cors-anywhere.herokuapp.com/https://api.wakatime.com/api/v1/users/current/stats/last_7_days';
           
           const response = await fetch(url, {
@@ -58,10 +55,8 @@ const App = () => {
         }
       };
   
-      // 2. Fungsi GitHub (URL Langsung ke API GitHub)
       const getGithub = async () => {
         try {
-          // Ganti URL 'api/api' kamu yang lama dengan URL resmi ini
           const response = await fetch("https://api.github.com/users/Rzfan03");
           const result = await response.json();
           
@@ -125,7 +120,7 @@ const App = () => {
 
   return (
     <main className="bg-zinc-900">
-      {/* Home Section - Fix Max Width agar tidak LDR */}
+      {/* Home Section */}
       <section
     
             id="home"
@@ -168,9 +163,9 @@ const App = () => {
     
                     threshold={0.1}
     
-                    rootMargin="-20px" // Margin diperkecil agar animasi jalan lebih cepat saat scroll
+                    rootMargin="-20px" 
     
-                    textAlign="left" // Sesuaikan dengan text-left parent
+                    textAlign="left"
     
                   />
     

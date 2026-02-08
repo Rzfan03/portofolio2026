@@ -156,7 +156,7 @@ const App = () => {
 
             <div className="relative hidden md:flex justify-center items-center">
               <AnimatedContent>
-                {/* <ProfileCard
+                <ProfileCard
 
                       delay="2"
 
@@ -190,7 +190,7 @@ const App = () => {
 
                       customInnerGradient="linear-gradient(145deg,hsla(319, 40%, 45%, 0.55) 0%,hsla(242, 60%, 70%, 0.27) 100%)"
 
-                    />*/}
+                    />
               </AnimatedContent>
             </div>
           </div>

@@ -6,7 +6,7 @@ app.use(cors())
 app.use(express.json())
 
 
-app.get('/', async (req, res) => {
+app.get('/api/wakatime', async (req, res) => {
   const ApiUrl = await fetch("https://api.wakatime.com/api/v1/users/rzfan/stats")
   const result = await ApiUrl.json()
   

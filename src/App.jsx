@@ -29,7 +29,7 @@ const App = () => {
 
   useEffect(() => {
     const getDataWakatime = async () => {
-      const ApiUrl = await fetch("/");
+      const ApiUrl = await fetch("/api/wakatime");
       const result = await ApiUrl.json();
 
       setDataWakatime(result.data.languages || []);

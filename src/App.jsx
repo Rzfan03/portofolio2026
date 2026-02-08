@@ -29,7 +29,7 @@ const App = () => {
 
   useEffect(() => {
     const getDataWakatime = async () => {
-      const ApiUrl = await fetch("/api/wakatime");
+      const ApiUrl = await fetch("https://api-rzfan03.vercel.app/");
       const result = await ApiUrl.json();
 
       setDataWakatime(result.data.languages || []);

@@ -12,16 +12,4 @@ export default defineConfig({
       },
     }),
   ],
-  server: {
-    proxy: {
-      // Setiap request yang diawali '/api-wakatime' akan diarahkan ke Wakatime
-      '/api-wakatime': {
-        target: 'https://api.wakatime.com',
-        changeOrigin: true,
-        secure: true,
-        // Kita hilangkan prefix '/api-wakatime' saat dikirim ke server tujuan
-        rewrite: (path) => path.replace(/^\/api-wakatime/, '/api/v1/users/current/stats/last_7_days'),
-      },
-    },
-  },
 })

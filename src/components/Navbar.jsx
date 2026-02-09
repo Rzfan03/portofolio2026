@@ -1,4 +1,3 @@
-import { useState } from "react";
 import StaggeredMenu from './StaggeredMenu';
 
 const Navbar = () => {
@@ -8,7 +7,7 @@ const Navbar = () => {
     { label: 'Projects', ariaLabel: 'View our services', link: '#projects' },
     { label: 'Stats', ariaLabel: 'My Stats', link: '#stats' },
     { label: 'Contact', ariaLabel: 'Get in touch', link: '#contact' },
-    { label: 'Blog', ariaLabel: 'My Blog', link: 'https://blog-rzfan03.netlify.app/' }
+    { label: 'Blog', ariaLabel: 'My Blog', link: 'https://blog-rzfan03.vercel.app/' }
   ];
   
   const socialItems = [
@@ -16,11 +15,8 @@ const Navbar = () => {
   ];
 
   return (
-    // FIX 1: Gunakan 'fixed' atau 'sticky' pada container terluar dengan top-0
-    // FIX 2: Hapus h-5 karena akan memotong area klik menu
     <nav className="fixed top-0 left-0 w-full z-[100] h-screen pointer-events-none">
       <StaggeredMenu
-        // FIX 3: Jangan gunakan min-h-screen di sini agar tidak menutupi seluruh konten saat menu tertutup
         className="w-full" 
         position="right"
         items={menuItems}

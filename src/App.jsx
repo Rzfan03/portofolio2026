@@ -97,7 +97,7 @@ const App = () => {
       name: "Rzfan03",
       desc: "My Portofolio in 2025",
       techStack: ["Astro", "Typescript", "TailwindCSS"],
-      link: "rzfan03.netlify.app/",
+      link: "https://rzfan03.netlify.app/",
     },
   ];
 

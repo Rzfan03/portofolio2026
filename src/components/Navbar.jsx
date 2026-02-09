@@ -7,7 +7,7 @@ const Navbar = () => {
     { label: 'Projects', ariaLabel: 'View our services', link: '#projects' },
     { label: 'Stats', ariaLabel: 'My Stats', link: '#stats' },
     { label: 'Contact', ariaLabel: 'Get in touch', link: '#contact' },
-    { label: 'Blog', ariaLabel: 'My Blog', link: 'https://blog-rzfan03.vercel.app/' }
+    { label: 'Blog', ariaLabel: 'My Blog', link: 'https://blog-rzfan.vercel.app/' }
   ];
   
   const socialItems = [
